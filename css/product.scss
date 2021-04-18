@@ -1,0 +1,90 @@
+$colorBackground: #00943C;
+$colorText: #f7c35f;
+$white: #fff;
+$myColor : rgba(71, 185, 22, 0.1);
+.text-title{
+    padding: 1% 5%;
+    background: $myColor;
+    color: $colorBackground;
+    font-weight: bold;
+
+    .first-title-inside{
+        color: black;
+        font-weight: normal;
+    }
+}
+.brand-choosing{
+    border-right: 1px solid #ddd;
+    width: 25%;
+    p{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $colorBackground;
+        padding-top: 10px;
+        border-top: 1px solid #ddd;
+        &:nth-child(1){
+            border-top: none;
+        }
+    }
+    .title-choose{
+        padding: 20px 0px;
+        margin: 0;
+    }
+    input{
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+    .check-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    div{
+        padding-bottom: 2%;
+    }
+}
+.content-container{
+    width: 73%;
+    img{
+        width: 100%;
+    }
+    .title-all-pd{
+        padding-top: 5%;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.all-products-line{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    div{
+        margin-right: 20px;
+    }
+    padding: 15px 0%;
+    border-bottom: 1px solid #ddd;
+    color: gray;
+    .arrange-div{
+        color: #00943C;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 900px){
+    .content-container{
+        width: 68%;
+    }
+    .brand-choosing{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 772px){
+    .brand-choosing{
+        display: none;
+    }
+    .content-container{
+        width: 100%;
+    }
+}
